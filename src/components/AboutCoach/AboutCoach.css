@@ -1,0 +1,124 @@
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-image {
+    position: relative;
+}
+
+.image-wrapper {
+    border-radius: 30px;
+    padding: 1rem;
+    transform: rotate(-3deg);
+    transition: var(--transition);
+}
+
+.image-wrapper:hover {
+    transform: rotate(0deg);
+}
+
+.image-wrapper img {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.floating-badge {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1rem 1.5rem;
+    border-radius: 40px;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.about-content h2 {
+    text-align: left;
+}
+
+.coach-stats {
+    list-style: none;
+    margin: 2rem 0;
+    padding: 0;
+}
+
+.coach-stats li {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.coach-stats i {
+    color: var(--primary-coral);
+    font-size: 1.2rem;
+}
+
+@media (max-width: 992px) {
+    .about-container {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .about-content h2 {
+        text-align: center;
+    }
+
+    .coach-stats {
+        display: inline-block;
+        text-align: left;
+    }
+}
+
+@media (max-width: 768px) {
+    .floating-badge {
+        display: none;
+    }
+
+    .about-content h2 {
+        text-align: center;
+        display: block;
+    }
+
+    /* Override the default h2 absolute positioning logic of its after pseudo-element */
+    .about-content h2::after {
+        position: static;
+        display: block;
+        margin: 12px auto 0;
+        transform: none;
+    }
+
+    .about-content p {
+        text-align: center;
+        max-width: 100%;
+        margin: 0 auto 2rem auto;
+    }
+
+    .coach-stats {
+        display: inline-block;
+        text-align: left;
+        /* Keep tick marks aligned left */
+        margin: 0 auto;
+    }
+
+    .coach-stats li {
+        font-size: 1rem;
+    }
+
+    .about-content .btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 2rem;
+    }
+}

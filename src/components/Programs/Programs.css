@@ -1,0 +1,107 @@
+.programs-section {
+    position: relative;
+}
+
+.programs-section h2::after {
+    width: 80px;
+    background: linear-gradient(90deg, #FFD700, #FF7F6E);
+}
+
+.programs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.program-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 3rem 2rem;
+}
+
+.popular-card {
+    border: 2px solid var(--primary-coral);
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+.popular-card:hover {
+    transform: scale(1.05) translateY(-5px);
+}
+
+.popular-badge {
+    position: absolute;
+    top: -15px;
+    background: var(--gradient-primary);
+    color: var(--white);
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.program-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(255, 127, 110, 0.2) 0%, rgba(255, 127, 110, 0.05) 100%);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 127, 110, 0.4);
+    box-shadow: 0 4px 15px rgba(255, 127, 110, 0.1);
+    font-size: 2.2rem;
+    color: var(--primary-coral);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.program-card p {
+    color: var(--text-light);
+    margin-bottom: 2rem;
+    flex-grow: 1;
+}
+
+.price {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--black);
+}
+
+.price span {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-light);
+}
+
+@media (max-width: 768px) {
+    .programs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .programs-section h2 {
+        text-align: center;
+    }
+
+    .programs-section h2::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .programs-section>p {
+        text-align: center;
+    }
+
+    .popular-card {
+        transform: scale(1);
+    }
+
+    .popular-card:hover {
+        transform: translateY(-5px);
+    }
+}

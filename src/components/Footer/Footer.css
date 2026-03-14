@@ -1,0 +1,153 @@
+.site-footer {
+    padding: 4rem 0 0;
+    margin-top: 2rem;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 3rem;
+    padding-bottom: 3rem;
+}
+
+.footer-brand p {
+    color: var(--text-light);
+    max-width: 280px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    margin-left: 1rem;
+}
+
+.footer-col h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: var(--text-dark);
+}
+
+.footer-col a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.footer-col a:hover {
+    color: var(--primary-coral);
+    padding-left: 5px;
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.social-icon:hover {
+    background: var(--primary-coral);
+    color: var(--white);
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    padding: 1.5rem 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    text-align: center;
+    color: var(--text-light);
+    font-size: 0.85rem;
+}
+
+@media (max-width: 992px) {
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .site-footer {
+        padding: 2.5rem 0 0;
+    }
+
+    .footer-grid {
+        /*
+          Row 1: Brand (full width, centered)
+          Row 2: Links (2 cols, left aligned)
+          Row 3: Socials (full width, left aligned like screenshot) 
+        */
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem 1.5rem;
+        padding-bottom: 2rem;
+    }
+
+    /* Brand at Top */
+    .footer-brand {
+        grid-column: 1 / -1;
+        text-align: center;
+        margin-bottom: 0.1rem;
+    }
+
+    .footer-brand p {
+        margin: 0.1rem auto;
+        font-size: 0.93rem;
+    }
+
+    /* Columns for Links & Programs */
+    .footer-col {
+        text-align: left;
+        gap: 0.3rem;
+        /* Tighter gap */
+    }
+
+    .footer-col h4 {
+        margin-bottom: 0.5rem;
+        font-size: 1.1rem;
+    }
+
+    .footer-col a {
+        min-height: auto;
+        /* Override global 44px touch target causing huge gaps */
+        padding: 0.2rem 0;
+    }
+
+    /* The Follow Us column should span full width in screenshot */
+    .footer-col:last-child {
+        grid-column: 1 / -1;
+        margin-top: 1rem;
+    }
+
+    .footer-social-icons {
+        justify-content: flex-start;
+        /* Left align like screenshot shows */
+    }
+
+    .footer-col a:hover {
+        padding-left: 0;
+    }
+
+    .footer-bottom {
+        padding: 1rem 0;
+    }
+}
