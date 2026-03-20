@@ -24,7 +24,7 @@
     font-weight: 600;
     color: var(--text-dark);
     margin-bottom: 2rem;
-    border: 1px solid rgba(255, 127, 110, 0.2);
+    border: 1px solid rgba(15, 36, 96, 0.2);
 }
 
 .ig-icon {
@@ -89,7 +89,7 @@
     color: var(--primary-coral);
     font-size: 1.5rem;
     cursor: pointer;
-    box-shadow: 0 10px 25px rgba(255, 127, 110, 0.3);
+    box-shadow: 0 10px 25px rgba(15, 36, 96, 0.3);
     transition: var(--transition);
     display: flex;
     justify-content: center;
@@ -140,7 +140,7 @@
 
 .mute-btn {
     position: absolute;
-    bottom: 20px;
+    bottom: 40px;
     right: 20px;
     width: 40px;
     height: 40px;
@@ -216,4 +216,70 @@
     .trainer-badge {
         display: none;
     }
+}
+
+/* Custom Video Scrubber */
+.custom-seekbar-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 15px 15px;
+    background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+    z-index: 15;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.video-placeholder:hover .custom-seekbar-container,
+.custom-seekbar-container:focus-within {
+    opacity: 1;
+}
+
+.seekbar-track {
+    position: absolute;
+    bottom: 18px; 
+    left: 15px;
+    right: 15px;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    pointer-events: none;
+}
+
+.seekbar-fill {
+    height: 100%;
+    background: linear-gradient(135deg, #0F2460 0%, #1B6CA8 100%);
+    border-radius: 5px;
+    position: relative;
+    /* transition: width 0.1s linear; */
+}
+
+.video-seekbar {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 6px;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    margin: 0;
+}
+
+.video-seekbar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.video-seekbar::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
 }

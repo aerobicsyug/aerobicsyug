@@ -12,7 +12,7 @@
 //                             {/* Video Testimonial 1 */}
 //                             <div className="glass-card testimonial-card reel-item" style={{ padding: '1rem' }}>
 //                                 <div className="video-placeholder" style={{ aspectRatio: '9/16', borderRadius: '12px' }}>
-//                                     <img src="https://res.cloudinary.com/da7ewmcje/image/upload/v1773151829/Screenshot_20260310_193049_Chrome.jpg_q1mzvz.jpg" alt="Video Testimonial 1" className="video-thumbnail" />
+//                                     <img loading="lazy" src="https://res.cloudinary.com/da7ewmcje/image/upload/f_auto,q_auto,w_auto/v1773151829/Screenshot_20260310_193049_Chrome.jpg_q1mzvz.jpg" alt="Video Testimonial 1" className="video-thumbnail" />
 //                                     <button className="play-btn" style={{ width: '50px', height: '50px', fontSize: '1rem' }}><i className="fas fa-play"></i></button>
 //                                 </div>
 //                                 <div className="stars mt-3" style={{ marginBottom: '0.5rem' }}>
@@ -24,7 +24,7 @@
 //                             {/* Video Testimonial 2 */}
 //                             <div className="glass-card testimonial-card reel-item" style={{ padding: '1rem' }}>
 //                                 <div className="video-placeholder" style={{ aspectRatio: '9/16', borderRadius: '12px' }}>
-//                                     <img src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Video Testimonial 2" className="video-thumbnail" />
+//                                     <img loading="lazy" src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Video Testimonial 2" className="video-thumbnail" />
 //                                     <button className="play-btn" style={{ width: '50px', height: '50px', fontSize: '1rem' }}><i className="fas fa-play"></i></button>
 //                                 </div>
 //                                 <div className="stars mt-3" style={{ marginBottom: '0.5rem' }}>
@@ -36,7 +36,7 @@
 //                             {/* Video Testimonial 3 */}
 //                             <div className="glass-card testimonial-card reel-item" style={{ padding: '1rem' }}>
 //                                 <div className="video-placeholder" style={{ aspectRatio: '9/16', borderRadius: '12px' }}>
-//                                     <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Video Testimonial 3" className="video-thumbnail" />
+//                                     <img loading="lazy" src="https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Video Testimonial 3" className="video-thumbnail" />
 //                                     <button className="play-btn" style={{ width: '50px', height: '50px', fontSize: '1rem' }}><i className="fas fa-play"></i></button>
 //                                 </div>
 //                                 <div className="stars mt-3" style={{ marginBottom: '0.5rem' }}>
@@ -48,7 +48,7 @@
 //                             {/* Video Testimonial 4 */}
 //                             <div className="glass-card testimonial-card reel-item" style={{ padding: '1rem' }}>
 //                                 <div className="video-placeholder" style={{ aspectRatio: '9/16', borderRadius: '12px' }}>
-//                                     <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Video Testimonial 4" className="video-thumbnail" />
+//                                     <img loading="lazy" src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Video Testimonial 4" className="video-thumbnail" />
 //                                     <button className="play-btn" style={{ width: '50px', height: '50px', fontSize: '1rem' }}><i className="fas fa-play"></i></button>
 //                                 </div>
 //                                 <div className="stars mt-3" style={{ marginBottom: '0.5rem' }}>
@@ -71,14 +71,14 @@ import './SocialProof.css';
 
 const SocialProof = () => {
     const testimonials = [
-        "https://res.cloudinary.com/da7ewmcje/image/upload/v1773151822/Screenshot_20260310_193018_Chrome.jpg_jts16s.jpg",
-        "https://res.cloudinary.com/da7ewmcje/image/upload/v1773151823/Screenshot_20260310_193045_Chrome.jpg_jrsuhy.jpg",
-        "https://res.cloudinary.com/da7ewmcje/image/upload/v1773151821/Screenshot_20260310_193030_Chrome.jpg_kz0mo0.jpg",
-        "https://res.cloudinary.com/da7ewmcje/image/upload/v1773151823/Screenshot_20260310_193030_Chrome.jpg_1_izwqic.jpg",
-        "https://res.cloudinary.com/da7ewmcje/image/upload/v1773151821/Screenshot_20260310_192952_Chrome.jpg_ihfyln.jpg",
-        "https://res.cloudinary.com/da7ewmcje/image/upload/v1773151822/Screenshot_20260310_193018_Chrome.jpg_jts16s.jpg",
-        "https://res.cloudinary.com/da7ewmcje/image/upload/v1773151823/Screenshot_20260310_193045_Chrome.jpg_jrsuhy.jpg",
-        "https://res.cloudinary.com/da7ewmcje/image/upload/v1773151821/Screenshot_20260310_193030_Chrome.jpg_kz0mo0.jpg"
+        "https://res.cloudinary.com/da7ewmcje/image/upload/f_auto,q_auto,w_auto/v1773151822/Screenshot_20260310_193018_Chrome.jpg_jts16s.jpg",
+        "https://res.cloudinary.com/da7ewmcje/image/upload/f_auto,q_auto,w_auto/v1773151823/Screenshot_20260310_193045_Chrome.jpg_jrsuhy.jpg",
+        "https://res.cloudinary.com/da7ewmcje/image/upload/f_auto,q_auto,w_auto/v1773151821/Screenshot_20260310_193030_Chrome.jpg_kz0mo0.jpg",
+        "https://res.cloudinary.com/da7ewmcje/image/upload/f_auto,q_auto,w_auto/v1773151823/Screenshot_20260310_193030_Chrome.jpg_1_izwqic.jpg",
+        "https://res.cloudinary.com/da7ewmcje/image/upload/f_auto,q_auto,w_auto/v1773151821/Screenshot_20260310_192952_Chrome.jpg_ihfyln.jpg",
+        "https://res.cloudinary.com/da7ewmcje/image/upload/f_auto,q_auto,w_auto/v1773151822/Screenshot_20260310_193018_Chrome.jpg_jts16s.jpg",
+        "https://res.cloudinary.com/da7ewmcje/image/upload/f_auto,q_auto,w_auto/v1773151823/Screenshot_20260310_193045_Chrome.jpg_jrsuhy.jpg",
+        "https://res.cloudinary.com/da7ewmcje/image/upload/f_auto,q_auto,w_auto/v1773151821/Screenshot_20260310_193030_Chrome.jpg_kz0mo0.jpg"
     ];
 
     // Duplicate for seamless infinite scroll

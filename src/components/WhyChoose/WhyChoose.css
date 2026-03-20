@@ -1,6 +1,6 @@
 .features-section h2::after {
     width: 120px;
-    background: linear-gradient(90deg, #FF7F6E, #FFD6CF);
+    background: var(--gradient-primary);
 }
 
 .features-grid {
@@ -22,18 +22,62 @@
 .feature-icon {
     width: 70px;
     height: 70px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, rgba(255, 127, 110, 0.2) 0%, rgba(255, 127, 110, 0.05) 100%);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 127, 110, 0.4);
-    box-shadow: 0 4px 15px rgba(255, 127, 110, 0.1);
-    color: var(--primary-coral);
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.8rem;
     margin: 0 auto 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.shape-circle {
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(168, 85, 247, 0.2) 0%, rgba(168, 85, 247, 0.05) 100%);
+    border: 1px solid rgba(168, 85, 247, 0.4);
+    color: #A855F7;
+    box-shadow: 0 4px 15px rgba(168, 85, 247, 0.1);
+}
+
+.shape-petal {
+    border-radius: 30px 10px 30px 10px;
+    background: linear-gradient(135deg, rgba(34, 197, 94, 0.2) 0%, rgba(34, 197, 94, 0.05) 100%);
+    border: 1px solid rgba(34, 197, 94, 0.4);
+    color: #22C55E;
+    box-shadow: 0 4px 15px rgba(34, 197, 94, 0.1);
+}
+
+.shape-rounded-square {
+    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.2) 0%, rgba(59, 130, 246, 0.05) 100%);
+    border: 1px solid rgba(59, 130, 246, 0.4);
+    color: #3B82F6;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.1);
+}
+
+.shape-blob {
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    background: linear-gradient(135deg, rgba(236, 72, 153, 0.2) 0%, rgba(236, 72, 153, 0.05) 100%);
+    border: 1px solid rgba(236, 72, 153, 0.4);
+    color: #EC4899;
+    box-shadow: 0 4px 15px rgba(236, 72, 153, 0.1);
+}
+
+.feature-card:hover .feature-icon {
+    transform: scale(1.1);
+}
+.feature-card:hover .shape-circle {
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+}
+.feature-card:hover .shape-petal {
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.4);
+}
+.feature-card:hover .shape-rounded-square {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
+}
+.feature-card:hover .shape-blob {
+    box-shadow: 0 0 20px rgba(236, 72, 153, 0.4);
 }
 
 @media (max-width: 768px) {

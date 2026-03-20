@@ -14,7 +14,7 @@ const Navbar = () => {
         <nav className="navbar glass-effect sticky">
             <div className="nav-container">
                 <Link to="/" className="logo">
-                    <span className="logo-en">Aerobics</span> <span className="logo-hi">युग</span>
+                    <span className="logo-en" style={{ fontFamily: "'Bebas Neue', cursive", letterSpacing: "2px", textTransform: "uppercase", fontSize: "1.8rem" }}>Aerobics</span> <span className="logo-hi">युग</span>
                 </Link>
                 <div className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
                     <Link to="/" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>

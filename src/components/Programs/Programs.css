@@ -4,7 +4,7 @@
 
 .programs-section h2::after {
     width: 80px;
-    background: linear-gradient(90deg, #FFD700, #FF7F6E);
+    background: linear-gradient(90deg, #0F2460, #0F2460);
 }
 
 .programs-grid {
@@ -48,11 +48,11 @@
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background: linear-gradient(135deg, rgba(255, 127, 110, 0.2) 0%, rgba(255, 127, 110, 0.05) 100%);
+    background: linear-gradient(135deg, rgba(15, 36, 96, 0.2) 0%, rgba(15, 36, 96, 0.05) 100%);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 127, 110, 0.4);
-    box-shadow: 0 4px 15px rgba(255, 127, 110, 0.1);
+    border: 1px solid rgba(15, 36, 96, 0.4);
+    box-shadow: 0 4px 15px rgba(15, 36, 96, 0.1);
     font-size: 2.2rem;
     color: var(--primary-coral);
     display: flex;

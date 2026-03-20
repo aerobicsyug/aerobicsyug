@@ -3,14 +3,14 @@ import './About.css';
 
 const About = () => {
     const galleryImages = [
-        { src: "https://res.cloudinary.com/da7ewmcje/image/upload/v1773316227/IMG_3903_n7egvy.jpg" },
-        { src: "https://res.cloudinary.com/da7ewmcje/image/upload/v1773316223/IMG_2990.JPG_jzr3fy.jpg" },
-        { src: "https://res.cloudinary.com/da7ewmcje/image/upload/v1773482585/WhatsApp_Image_2026-03-13_at_22.00.32_1_qcbk6g.jpg" },
-        { src: "https://res.cloudinary.com/da7ewmcje/image/upload/v1773316225/IMG_1135_dduwb9.jpg" },
-        { src: "https://res.cloudinary.com/da7ewmcje/image/upload/v1773316223/IMG_2771_hn1s7v.jpg" },
-        { src: "https://res.cloudinary.com/da7ewmcje/image/upload/v1773482584/WhatsApp_Image_2026-03-13_at_22.00.32_myiim0.jpg" },
-        { src: "https://res.cloudinary.com/da7ewmcje/image/upload/v1773316223/IMG_5481_ptktp5.jpg" },
-        { src: "https://res.cloudinary.com/da7ewmcje/image/upload/v1773482587/IMG_6757.JPG_nlf2ih.jpg" },
+        { src: "https://res.cloudinary.com/da7ewmcje/image/upload/f_auto,q_auto,w_auto/v1773316227/IMG_3903_n7egvy.jpg" },
+        { src: "https://res.cloudinary.com/da7ewmcje/image/upload/f_auto,q_auto,w_auto/v1773316223/IMG_2990.JPG_jzr3fy.jpg" },
+        { src: "https://res.cloudinary.com/da7ewmcje/image/upload/f_auto,q_auto,w_auto/v1773482585/WhatsApp_Image_2026-03-13_at_22.00.32_1_qcbk6g.jpg" },
+        { src: "https://res.cloudinary.com/da7ewmcje/image/upload/f_auto,q_auto,w_auto/v1773316225/IMG_1135_dduwb9.jpg" },
+        { src: "https://res.cloudinary.com/da7ewmcje/image/upload/f_auto,q_auto,w_auto/v1773316223/IMG_2771_hn1s7v.jpg" },
+        { src: "https://res.cloudinary.com/da7ewmcje/image/upload/f_auto,q_auto,w_auto/v1773482584/WhatsApp_Image_2026-03-13_at_22.00.32_myiim0.jpg" },
+        { src: "https://res.cloudinary.com/da7ewmcje/image/upload/f_auto,q_auto,w_auto/v1773316223/IMG_5481_ptktp5.jpg" },
+        { src: "https://res.cloudinary.com/da7ewmcje/image/upload/f_auto,q_auto,w_auto/v1773482587/IMG_6757.JPG_nlf2ih.jpg" },
     ];
 
     // Duplicate for seamless infinite scroll
@@ -30,7 +30,7 @@ const About = () => {
                 <div className="container">
                     <div className="trainer-intro-grid">
                         <div className="glass-card trainer-photo-main" style={{ padding: '1rem' }}>
-                            <img src="https://res.cloudinary.com/da7ewmcje/image/upload/v1773482585/WhatsApp_Image_2026-03-13_at_22.00.32_2_qjkib6.jpg" alt="Coach" />
+                            <img loading="lazy" src="https://res.cloudinary.com/da7ewmcje/image/upload/f_auto,q_auto,w_auto/v1773482585/WhatsApp_Image_2026-03-13_at_22.00.32_2_qjkib6.jpg" alt="Coach" />
                         </div>
                         <div className="trainer-intro-content">
                             <h2>About the Trainer</h2>
@@ -85,7 +85,7 @@ const About = () => {
                         <div className="timeline-item">
                             <div className="timeline-dot"></div>
                             <div className="glass-card timeline-content">
-                                <div className="timeline-year">2018</div>
+                                <div className="timeline-year">2017</div>
                                 <h4>Started Yoga Practice</h4>
                                 <p>Began her personal journey into yoga, meditation, and holistic wellness.</p>
                             </div>

@@ -1,4 +1,5 @@
 import './Contact.css';
+import { FaWhatsapp, FaEnvelope } from 'react-icons/fa6';
 
 const Contact = () => {
     return (
@@ -10,8 +11,8 @@ const Contact = () => {
                 </p>
                 <div className="contact-grid">
                     <div className="glass-card contact-info-card">
-                        <div className="contact-icon-wrap">
-                            <i className="fab fa-whatsapp"></i>
+                        <div className="contact-icon-wrap" style={{ color: "#25D366" }}>
+                            <FaWhatsapp />
                         </div>
                         <div>
                             <h4>WhatsApp</h4>
@@ -30,7 +31,7 @@ const Contact = () => {
                     </div>
                     <div className="glass-card contact-info-card">
                         <div className="contact-icon-wrap">
-                            <i className="fab fa-instagram"></i>
+                            <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram" style={{ width: "1em", height: "1em" }} />
                         </div>
                         <div>
                             <h4>Instagram</h4>
@@ -47,8 +48,8 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className="glass-card contact-info-card">
-                        <div className="contact-icon-wrap">
-                            <i className="fas fa-envelope"></i>
+                        <div className="contact-icon-wrap" style={{ color: "#EA4335" }}>
+                            <FaEnvelope />
                         </div>
                         <div>
                             <h4>Email</h4>

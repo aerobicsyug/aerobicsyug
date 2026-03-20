@@ -1,27 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
 /* Aerobics युग Design System - Globals */
 
 :root {
   /* Colors */
-  --primary-coral: #FF7F6E;
-  --primary-peach: #FFD6CF;
+  --primary-coral: #0F2460;
+  --primary-peach: #1B6CA8;
   --white: #FFFFFF;
   --black: #1A1A1A;
   --text-dark: #2D3748;
   --text-light: #718096;
 
   /* Gradients */
-  --gradient-primary: linear-gradient(135deg, #FF7F6E 0%, #FFA89B 100%);
-  --gradient-bg: linear-gradient(135deg, #FFF0EE 0%, #FFFFFF 100%);
-  --gradient-text: linear-gradient(90deg, #FF7F6E 0%, #FF5A82 100%);
+  --gradient-primary: linear-gradient(135deg, #0F2460 0%, #1B6CA8 100%);
+  --gradient-bg: linear-gradient(135deg, #F8F9FA 0%, #E9ECEF 100%);
+  --gradient-text: linear-gradient(90deg, #0F2460 0%, #1B6CA8 100%);
 
   /* Glassmorphism */
   --glass-bg: rgba(255, 255, 255, 0.4);
   --glass-border: 1px solid rgba(255, 255, 255, 0.6);
-  --glass-shadow: 0 10px 40px 0 rgba(255, 127, 110, 0.15);
+  --glass-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.05);
   --glass-blur: backdrop-filter: blur(16px);
 
   /* Typography */
-  --font-en: 'Outfit', sans-serif;
+  --font-en: 'Poppins', sans-serif;
   --font-hi: 'Tiro Devanagari Hindi', serif;
 
   /* Base Spacing */
@@ -58,30 +60,30 @@ body {
   height: 100vh;
   overflow: hidden;
   z-index: -2;
-  background: #FFF8F6;
+  background: #FFFFFF;
 }
-
+/* 
 .gradient-blob {
   position: absolute;
   filter: blur(90px);
   opacity: 0.6;
   animation: drift 20s infinite alternate ease-in-out;
   border-radius: 50%;
-}
+} */
 
-.blob-1 {
+/* .blob-1 {
   width: 600px;
   height: 600px;
-  background: rgba(255, 127, 110, 0.4);
+  background: rgba(15, 36, 96, 0.4);
   top: -100px;
   left: -100px;
   animation-duration: 25s;
-}
+} */
 
-.blob-2 {
+/* .blob-2 {
   width: 700px;
   height: 700px;
-  background: rgba(255, 214, 207, 0.6);
+  background: rgba(27, 108, 168, 0.6);
   bottom: -200px;
   right: -100px;
   animation-duration: 22s;
@@ -106,7 +108,7 @@ body {
   top: 10%;
   right: 20%;
   animation-duration: 18s;
-}
+} */
 
 @keyframes drift {
   0% {
@@ -148,7 +150,7 @@ body {
 
 .glass-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(255, 127, 110, 0.15);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.08);
 }
 
 /* Typography */
@@ -204,51 +206,55 @@ h2::after {
 
 /* Buttons */
 .btn {
-  display: inline-block;
-  padding: 14px 28px;
-  border-radius: 50px;
-  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 34px;
+  border-radius: 30px;
+  font-weight: 700;
   text-decoration: none;
-  transition: var(--transition);
+  transition: all 0.3s ease;
   cursor: pointer;
-  border: none;
-  font-size: 1rem;
+  font-size: 1.05rem;
+  border: 2px solid transparent; /* default border */
 }
 
 .btn-primary {
-  background: var(--gradient-primary);
-  color: var(--white);
-  box-shadow: 0 4px 15px rgba(255, 127, 110, 0.3);
+  background: linear-gradient(135deg, #0F2460 0%, #1B6CA8 100%);
+  color: #ffffff;
+  /* border: 2px solid #0F2460; */
+  box-shadow: 0 6px 20px rgba(15, 36, 96, 0.3);
 }
 
 .btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(255, 127, 110, 0.4);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 30px rgba(15, 36, 96, 0.5);
 }
 
 .btn-secondary {
-  background: transparent;
-  color: var(--primary-coral);
-  border: 2px solid var(--primary-coral);
+  background: linear-gradient(135deg, #0F2460 0%, #1B6CA8 100%);
+  color: #ffffff ;
+  /* border: 2px solid #0F2460; */
+  box-shadow: 0 6px 20px rgba(15, 36, 96, 0.3);
 }
 
 .btn-secondary:hover {
-  background: var(--primary-peach);
-  color: var(--primary-coral);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 30px rgba(15, 36, 96, 0.5);
 }
 
 /* Globals Animations used widely */
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(255, 127, 110, 0.4);
+    box-shadow: 0 0 0 0 rgba(15, 36, 96, 0.4);
   }
 
   70% {
-    box-shadow: 0 0 0 15px rgba(255, 127, 110, 0);
+    box-shadow: 0 0 0 15px rgba(15, 36, 96, 0);
   }
 
   100% {
-    box-shadow: 0 0 0 0 rgba(255, 127, 110, 0);
+    box-shadow: 0 0 0 0 rgba(15, 36, 96, 0);
   }
 }
 

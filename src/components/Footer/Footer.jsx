@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { FaYoutube, FaFacebook } from 'react-icons/fa6';
 import './Footer.css';
 
 const Footer = () => {
@@ -27,9 +28,11 @@ const Footer = () => {
                     <div className="footer-col">
                         <h4>Follow Us</h4>
                         <div className="footer-social-icons">
-                            <a href="https://instagram.com/aerobics_yug" target="_blank" rel="noopener noreferrer" className="social-icon"><i className="fab fa-instagram"></i></a>
-                            <a href="#" className="social-icon"><i className="fab fa-youtube"></i></a>
-                            <a href="#" className="social-icon"><i className="fab fa-facebook"></i></a>
+                            <a href="https://instagram.com/aerobics_yug" target="_blank" rel="noopener noreferrer" className="social-icon" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
+                                <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram" style={{ width: "20px", height: "20px" }} />
+                            </a>
+                            <a href="#" className="social-icon" style={{ color: "#FF0000", fontSize: '20px', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}><FaYoutube /></a>
+                            <a href="#" className="social-icon" style={{ color: "#1877F2", fontSize: '20px', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}><FaFacebook /></a>
                         </div>
                     </div>
                 </div>

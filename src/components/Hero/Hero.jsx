@@ -5,7 +5,21 @@ import './Hero.css';
 const Hero = () => {
     const [isPlaying, setIsPlaying] = useState(false);
     const [isMuted, setIsMuted] = useState(true);
+    const [progress, setProgress] = useState(0);
     const videoRef = useRef(null);
+
+    const handleTimeUpdate = () => {
+        if (!videoRef.current) return;
+        const currentProgress = (videoRef.current.currentTime / videoRef.current.duration) * 100;
+        setProgress(currentProgress);
+    };
+
+    const handleSeek = (e) => {
+        if (!videoRef.current) return;
+        const newTime = (e.target.value / 100) * videoRef.current.duration;
+        videoRef.current.currentTime = newTime;
+        setProgress(e.target.value);
+    };
 
     const handlePlay = () => {
         if (videoRef.current) {
@@ -36,9 +50,16 @@ const Hero = () => {
                 <div className="hero-content">
                     <div className="trust-badge">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram" className="ig-icon" />
-                        <span>Trusted by 90,000+ fitness enthusiasts on Instagram</span>
+                        <span>Trusted by 100k+ fitness enthusiasts on Instagram</span>
                     </div>
-                    <h1 className="headline">Transform Your Body With Online <span className="text-gradient">Aerobics Classes</span></h1>
+                    <h1 className="headline" style={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
+                        <span style={{ fontFamily: "var(--font-en)", fontWeight: "800", color: "var(--text-dark)", fontSize: "0.75em", lineHeight: "1.2", textTransform: "none", letterSpacing: "normal" }}>
+                            Transform Your Body With Online
+                        </span>
+                        <span style={{ fontFamily: "'Bebas Neue', cursive", fontSize: "1.3em", letterSpacing: "3px", background: "linear-gradient(90deg, #0F2460 0%, #1B6CA8 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", lineHeight: "1.1" }}>
+                            Fitness Classes
+                        </span>
+                    </h1>
                     <p className="subheadline">Join thousands of women improving their health, confidence and energy through guided online fitness training.</p>
                     <div className="hero-buttons">
                         <Link to="/enroll?program=demo" className="btn btn-primary pulse-anim">Book Demo Class</Link>
@@ -57,6 +78,7 @@ const Hero = () => {
                                 playsInline
                                 preload="metadata"
                                 controls={false}
+                                onTimeUpdate={handleTimeUpdate}
                             />
                             {!isPlaying && (
                                 <button className="play-btn" onClick={(e) => { e.stopPropagation(); handlePlay(); }}>
@@ -70,10 +92,24 @@ const Hero = () => {
                             >
                                 <i className={`fas ${isMuted ? 'fa-volume-mute' : 'fa-volume-up'}`}></i>
                             </button>
+                            <div className="custom-seekbar-container" onClick={(e) => e.stopPropagation()}>
+                                <div className="seekbar-track">
+                                    <div className="seekbar-fill" style={{ width: `${progress}%` }}></div>
+                                </div>
+                                <input 
+                                    type="range" 
+                                    min="0" 
+                                    max="100" 
+                                    value={progress || 0} 
+                                    onChange={handleSeek} 
+                                    className="video-seekbar"
+                                    aria-label="Seek video"
+                                />
+                            </div>
                         </div>
                     </div>
                     <div className="trainer-badge glass-card float-anim">
-                        <img src="https://res.cloudinary.com/da7ewmcje/image/upload/v1773482590/IMG_6263.JPG_yycovw.jpg" alt="Trainer Profile" />
+                        <img src="https://res.cloudinary.com/da7ewmcje/image/upload/f_auto,q_auto,w_auto/v1773482590/IMG_6263.JPG_yycovw.jpg" alt="Trainer Profile" />
                         <div className="trainer-info">
                             <strong>Expert Coach</strong>
                             <span>Online Live</span>

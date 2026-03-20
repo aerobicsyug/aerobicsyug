@@ -19,9 +19,9 @@
     height: 55px;
     min-width: 55px;
     border-radius: 50%;
-    background: linear-gradient(135deg, rgba(255, 127, 110, 0.2), rgba(255, 127, 110, 0.05));
+    background: linear-gradient(135deg, rgba(15, 36, 96, 0.2), rgba(15, 36, 96, 0.05));
     backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 127, 110, 0.4);
+    border: 1px solid rgba(15, 36, 96, 0.4);
     display: flex;
     align-items: center;
     justify-content: center;
