@@ -21,7 +21,7 @@ const AboutCoach = () => {
                     <ul className="coach-stats">
                         <li><i className="fas fa-check-circle"></i> International Yoga Certification</li>
                         <li><i className="fas fa-check-circle"></i> Online Live Classes since 2020</li>
-                        <li><i className="fas fa-check-circle"></i> 94K+ Strong Instagram Community</li>
+                        <li><i className="fas fa-check-circle"></i> 100K+ Strong Instagram Community</li>
                         <li><i className="fas fa-check-circle"></i> Helping 1000s of women stay fit</li>
                     </ul>
 

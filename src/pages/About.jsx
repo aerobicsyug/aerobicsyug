@@ -40,7 +40,7 @@ const About = () => {
                                 <li>Certified with an <strong>International Yoga Certification</strong> for authentic, reliable instruction.</li>
                                 <li>Specialized expertise in <strong>aerobics and functional fitness</strong> tailored specifically for women.</li>
                                 <li>Focuses on making fitness <strong>accessible, enjoyable, and sustainable</strong> from the comfort of your home.</li>
-                                <li>Proud leader of a dedicated community of <strong>94K+ women on Instagram</strong> achieving real results.</li>
+                                <li>Proud leader of a dedicated community of <strong>100K+ women on Instagram</strong> achieving real results.</li>
                             </ul>
 
                             <div className="trainer-highlights">
@@ -61,7 +61,7 @@ const About = () => {
                                 <div className="glass-card highlight-item">
                                     <div className="highlight-icon"><i className="fas fa-users"></i></div>
                                     <div>
-                                        <h4>94K+ Community</h4>
+                                        <h4>100K+ Community</h4>
                                         <p>Active Instagram Followers</p>
                                     </div>
                                 </div>
@@ -119,7 +119,7 @@ const About = () => {
                             <div className="timeline-dot"></div>
                             <div className="glass-card timeline-content">
                                 <div className="timeline-year">2024</div>
-                                <h4>94K+ Instagram Community</h4>
+                                <h4>100K+ Instagram Community</h4>
                                 <p>Built one of India's largest women-only online fitness communities with real results.</p>
                             </div>
                         </div>
