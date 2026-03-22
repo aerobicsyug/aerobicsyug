@@ -31,7 +31,7 @@ const About = () => {
                 <div className="container">
                     <div className="trainer-intro-grid">
                         <div className="glass-card trainer-photo-main" style={{ padding: '1rem' }}>
-                            <img loading="lazy" src="https://res.cloudinary.com/dbvntoevg/image/upload/v1774029062/Preeti_RAWAT_20260320_232012_0000.jpg_e71myp.jpg" alt="Coach" />
+                            <img loading="lazy" src="https://res.cloudinary.com/dbvntoevg/image/upload/v1774173678/Preeti_RAWAT_20260321_173628_0000.jpg_idn9hm.jpg" alt="Coach" />
                         </div>
                         <div className="trainer-intro-content">
                             <h2>About the Trainer</h2>

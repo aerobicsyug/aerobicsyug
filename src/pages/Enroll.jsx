@@ -15,8 +15,8 @@ const Enroll = () => {
         batch: ''
     });
 
-    const prices = { demo: 199, monthly: 1499, '6month': 7999 };
-    const names = { demo: 'Demo Class', monthly: 'Monthly Fitness Program', '6month': '6 Month Transformation' };
+    const prices = { demo: 299, monthly: 3300, '2month': 6000 };
+    const names = { demo: 'Demo Class', monthly: 'Monthly Fitness Program', '2month': '2 Month Transformation' };
 
     useEffect(() => {
         const programParam = searchParams.get('program');
@@ -129,9 +129,9 @@ const Enroll = () => {
                                 <label htmlFor="program">Program Selected</label>
                                 <select id="program" value={formData.program} onChange={handleChange} required>
                                     <option value="">-- Choose a Program --</option>
-                                    <option value="demo">Demo Class — ₹199</option>
-                                    <option value="monthly">Monthly Fitness Program — ₹1,499</option>
-                                    <option value="6month">6 Month Transformation — ₹7,999</option>
+                                    <option value="demo">Demo Class — ₹299</option>
+                                    <option value="monthly">Monthly Fitness Program — ₹3,300</option>
+                                    <option value="2month">2 Month Transformation — ₹6,000</option>
                                 </select>
                             </div>
                             <div className="form-group">

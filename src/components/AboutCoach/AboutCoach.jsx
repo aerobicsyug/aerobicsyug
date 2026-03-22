@@ -7,7 +7,7 @@ const AboutCoach = () => {
             <div className="container about-container">
                 <div className="about-image">
                     <div className="image-wrapper glass-effect">
-                        <img loading="lazy" src="https://res.cloudinary.com/dbvntoevg/image/upload/v1774029062/Preeti_RAWAT_20260320_232012_0000.jpg_e71myp.jpg" alt="Coach Profile" />
+                        <img loading="lazy" src="https://res.cloudinary.com/dbvntoevg/image/upload/v1774173678/Preeti_RAWAT_20260321_173628_0000.jpg_idn9hm.jpg" alt="Coach Profile" />
                     </div>
                     <div className="glass-card floating-badge">
                         <i className="fas fa-certificate text-gradient"></i>
