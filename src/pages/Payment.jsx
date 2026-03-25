@@ -153,10 +153,10 @@ Date & Time: ${dateString} at ${timeString}
                             <div className="program-name">{enrollData.programName || '—'}</div>
                         </div>
 
-                        {/* Pay Now Button (UPI Deep Link) */}
+                        {/* Pay Now Button (UPI Deep Link) 
                         <a href={upiLink} className="btn btn-primary pay-now-btn pulse-anim">
                             <i className="fas fa-wallet"></i> Pay Now via UPI
-                        </a>
+                        </a>*/}
 
                         {/* UPI ID */}
                         <div className="upi-section">
