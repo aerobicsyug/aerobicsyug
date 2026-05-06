@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 import Home from './pages/Home';
 import About from './pages/About';
 import Enroll from './pages/Enroll';
@@ -23,6 +24,7 @@ function App() {
       </Routes>
       <Footer />
       <FloatingWhatsApp />
+      <Analytics />
     </Router>
   );
 }
