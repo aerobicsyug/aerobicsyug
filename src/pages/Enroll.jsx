@@ -75,7 +75,7 @@ const Enroll = () => {
                             <div className="package-benefits">
                                 <h3 style={{ marginBottom: '1rem', color: 'var(--text-dark)' }}>Demo Class Includes:</h3>
                                 <ul className="trust-points">
-                                    <li><i className="fas fa-check-circle"></i> 1 Live Session with our expert trainers</li>
+                                    <li><i className="fas fa-check-circle"></i> 1 Live Session with our expert trainer Preeti</li>
                                     <li><i className="fas fa-check-circle"></i> Experience our interactive workout style</li>
                                     <li><i className="fas fa-check-circle"></i> Basic fitness assessment & guidance</li>
                                     <li><i className="fas fa-check-circle"></i> Understanding of our weekly structure</li>
