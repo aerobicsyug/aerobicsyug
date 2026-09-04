@@ -6,6 +6,38 @@ const Programs = () => {
         <section id="programs" className="section programs-section">
             <div className="container">
                 <h2>Transform With Us</h2>
+
+                {/* Feature 2: Winter Special Program Card (Highlighted rectangular card ABOVE existing cards) */}
+                <div className="winter-special-wrapper">
+                    <div className="glass-card winter-special-card">
+                        <div className="winter-badge">LIMITED TIME OFFER ❄️</div>
+                        <div className="winter-card-body">
+                            <div className="winter-header">
+                                <div className="program-icon winter-icon">
+                                    <i className="fas fa-snowflake"></i>
+                                </div>
+                                <div className="winter-title-group">
+                                    <h3>Winter Special</h3>
+                                    <div className="winter-subtitle">November • December • January</div>
+                                </div>
+                            </div>
+                            <p className="winter-desc">
+                                3 months of guided online aerobics classes. Full payment only. Limited seats available!
+                            </p>
+                            <div className="winter-footer">
+                                <div className="winter-price-container">
+                                    <div className="original-price">₹9,900</div>
+                                    <div className="price winter-price">₹8,000 <span>(full payment, one time)</span></div>
+                                    <div className="discount-tag">You Save ₹1,900 (19% OFF) 🎉</div>
+                                </div>
+                                <Link to="/enroll-winter" className="btn btn-primary winter-btn pulse-anim">
+                                    Enroll Now <i className="fas fa-arrow-right" style={{ marginLeft: '0.5rem' }}></i>
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div className="programs-grid">
                     {/* Demo Class */}
                     <div className="glass-card program-card">
@@ -26,7 +58,7 @@ const Programs = () => {
                         <Link to="/enroll?program=monthly" className="btn btn-primary w-100 mt-4 pulse-anim">Join Program</Link>
                     </div>
 
-                    {/* 6 Month Program */}
+                    {/* 2 Month Transformation */}
                     <div className="glass-card program-card">
                         <div className="program-icon"><i className="fas fa-crown"></i></div>
                         <h3>2 Month Transformation</h3>

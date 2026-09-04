@@ -7,11 +7,165 @@
     background: linear-gradient(90deg, #0F2460, #0F2460);
 }
 
+/* Feature 2: Winter Special Card Styling */
+.winter-special-wrapper {
+    margin-bottom: 2.5rem;
+    width: 100%;
+}
+
+.winter-special-card {
+    position: relative;
+    padding: 2.5rem 3rem;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(224, 242, 254, 0.6) 100%);
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    box-shadow: 0 10px 30px rgba(15, 36, 96, 0.15), 0 0 20px rgba(27, 108, 168, 0.2);
+    border-radius: 24px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.winter-special-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 24px;
+    padding: 2px;
+    background: linear-gradient(135deg, #0F2460 0%, #38BDF8 50%, #1B6CA8 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+.winter-special-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(15, 36, 96, 0.2), 0 0 25px rgba(56, 189, 248, 0.3);
+}
+
+.winter-badge {
+    position: absolute;
+    top: 18px;
+    right: 25px;
+    background: linear-gradient(135deg, #0284C7 0%, #0F2460 100%);
+    color: #FFFFFF;
+    padding: 6px 18px;
+    border-radius: 50px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 12px rgba(2, 132, 199, 0.3);
+}
+
+.winter-card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.winter-header {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.winter-icon {
+    width: 65px;
+    height: 65px;
+    margin-bottom: 0;
+    background: linear-gradient(135deg, rgba(56, 189, 248, 0.2) 0%, rgba(15, 36, 96, 0.1) 100%);
+    border-color: rgba(56, 189, 248, 0.5);
+    color: #0284C7;
+    font-size: 1.8rem;
+    flex-shrink: 0;
+}
+
+.winter-title-group h3 {
+    font-size: 1.8rem;
+    color: var(--primary-coral);
+    margin-bottom: 0.2rem;
+}
+
+.winter-subtitle {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #0284C7;
+    letter-spacing: 0.5px;
+}
+
+.winter-desc {
+    color: var(--text-dark);
+    font-size: 1.05rem;
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
+.winter-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(15, 36, 96, 0.1);
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.winter-price-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.original-price {
+    font-size: 1.1rem;
+    color: #94A3B8;
+    text-decoration: line-through;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.winter-price {
+    font-size: 2.3rem;
+    font-weight: 800;
+    color: #0F2460;
+    line-height: 1.1;
+}
+
+.winter-price span {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-light);
+    display: inline-block;
+    margin-left: 0.4rem;
+}
+
+.discount-tag {
+    display: inline-block;
+    background: #DCFCE7;
+    color: #15803D;
+    border: 1px solid #86EFAC;
+    padding: 3px 12px;
+    border-radius: 20px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    margin-top: 0.4rem;
+}
+
+.winter-btn {
+    padding: 12px 32px;
+}
+
+/* Existing Programs Grid */
 .programs-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 .program-card {
@@ -80,6 +234,43 @@
 }
 
 @media (max-width: 768px) {
+    .winter-special-card {
+        padding: 2rem 1.5rem;
+        text-align: center;
+    }
+
+    .winter-badge {
+        position: relative;
+        top: 0;
+        right: 0;
+        display: inline-block;
+        margin-bottom: 1rem;
+    }
+
+    .winter-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.8rem;
+    }
+
+    .winter-title-group h3 {
+        font-size: 1.4rem !important;
+    }
+
+    .winter-footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .winter-price-container {
+        align-items: center;
+    }
+
+    .winter-price {
+        font-size: 1.8rem;
+    }
+
     .programs-grid {
         grid-template-columns: 1fr;
     }
