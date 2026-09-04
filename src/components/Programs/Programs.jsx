@@ -10,7 +10,7 @@ const Programs = () => {
                 {/* Feature 2: Winter Special Program Card (Highlighted rectangular card ABOVE existing cards) */}
                 <div className="winter-special-wrapper">
                     <div className="glass-card winter-special-card">
-                        <div className="winter-badge">LIMITED TIME OFFER ❄️</div>
+                        <div className="winter-badge">LIMITED TIME OFFER</div>
                         <div className="winter-card-body">
                             <div className="winter-header">
                                 <div className="program-icon winter-icon">
