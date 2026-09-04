@@ -158,6 +158,32 @@
 
 .winter-btn {
     padding: 12px 32px;
+    background: linear-gradient(135deg, #EC4899 0%, #DB2777 100%) !important;
+    color: #FFFFFF !important;
+    box-shadow: 0 6px 20px rgba(236, 72, 153, 0.4) !important;
+    border: none;
+}
+
+.winter-btn:hover {
+    background: linear-gradient(135deg, #F472B6 0%, #BE185D 100%) !important;
+    box-shadow: 0 10px 30px rgba(236, 72, 153, 0.6) !important;
+    transform: translateY(-3px) scale(1.05);
+}
+
+.winter-btn.pulse-anim {
+    animation: pulse-pink 2s infinite;
+}
+
+@keyframes pulse-pink {
+    0% {
+        box-shadow: 0 0 0 0 rgba(236, 72, 153, 0.6);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(236, 72, 153, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(236, 72, 153, 0);
+    }
 }
 
 /* Existing Programs Grid */

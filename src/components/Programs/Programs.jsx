@@ -22,7 +22,7 @@ const Programs = () => {
                                 </div>
                             </div>
                             <p className="winter-desc">
-                                3 months of guided online aerobics classes. Full payment only. Limited seats available!
+                                3 months of guided ONLINE Fitness Classes. Full payment only! LIMITED SEATS! Hurry! Book your seat in advance.
                             </p>
                             <div className="winter-footer">
                                 <div className="winter-price-container">
@@ -31,7 +31,7 @@ const Programs = () => {
                                     <div className="discount-tag">You Save ₹1,900 (19% OFF) 🎉</div>
                                 </div>
                                 <Link to="/enroll-winter" className="btn btn-primary winter-btn pulse-anim">
-                                    Enroll Now <i className="fas fa-arrow-right" style={{ marginLeft: '0.5rem' }}></i>
+                                    Confirm Your Seat <i className="fas fa-arrow-right" style={{ marginLeft: '0.5rem' }}></i>
                                 </Link>
                             </div>
                         </div>
