@@ -15,7 +15,7 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
-      <PopupBanner />
+      {/* <PopupBanner /> */}
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

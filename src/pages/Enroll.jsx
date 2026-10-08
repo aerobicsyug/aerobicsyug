@@ -63,11 +63,11 @@ const Enroll = () => {
         <section className="enroll-section section">
             <div className="container">
                 {/* Notice Alert Bar */}
-                <div className="notice-alert-bar">
+                {/* <div className="notice-alert-bar">
                     <span className="notice-alert-text">
                         ⚠️ New enrollments opening from 12th October only. Stay tuned!
                     </span>
-                </div>
+                </div> */}
 
                 <div className="enroll-wrapper">
                     {/* Left Info */}
